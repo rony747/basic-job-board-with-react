@@ -16,6 +16,8 @@ function reducer(state, action) {
             return {...state, isLoading: true}
         case "loaded":
             return {...state, projects: action.payload.projects, clients: action.payload.clients,isLoading: false}
+        case "project/add":
+            return {...state, projects: [...state.projects,{id:crypto.randomUUID(), project_name:action.payload.title, project_description:action.payload.descrip, tasks:[], client_id:Number(action.payload.select)}]}
 
         default:
             return state
@@ -51,7 +53,7 @@ const {projects,clients,status,currentProject,isLoading}=state
         return currentProject
     }
     return (
-        <ProjectContext.Provider value={{projects,clients,status,currentProject,isLoading, getProject}}>
+        <ProjectContext.Provider value={{projects,clients,status,currentProject,isLoading, getProject,dispatch}}>
             {children}
         </ProjectContext.Provider>
     )

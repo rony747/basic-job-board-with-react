@@ -19,8 +19,13 @@ import './SideBar.css'
 import AddProject from "@/components/AddProject.jsx";
 
 function SideBar() {
-    const {projects} = useProjects()
+    const {projects, clients,isLoading} = useProjects()
     const {id} = useParams()
+    if (isLoading) return;
+    function getClientImg(id){
+        let currClient = clients.find(client=>client.id === id)
+        return currClient.client_logo
+    }
     return (
         <>
             <div className={'basis-[20%] p-5 border-r-[1px] border-gray-200 flex justify-between flex-col'}>
@@ -33,7 +38,10 @@ function SideBar() {
                                 <div key={project.id}
                                      className={`project_list_item  border-[1px] border-gray-200 rounded-lg flex justify-between items-center mb-1 ${project.id === id ? 'active' : ''}`}>
                                     <Link to={`/projects/${project.id}`}
-                                          className={'text-sm font-semibold pl-3 py-2 pr-1 block basis-5/6 text-gray-700 capitalize'}>{project.project_name}</Link>
+                                          className={'text-sm font-semibold pl-3 py-2 pr-1 block basis-5/6 text-gray-700 capitalize flex items-center'}>
+                                        {(project.client_id && getClientImg(project.client_id)) ? <img className={'w-8 h-8 rounded-full mr-2'} src={getClientImg(project.client_id)} /> : ''}
+                                        {project.project_name}
+                                        </Link>
                                     <DropdownMenu className={'basis-1/6'}>
                                         <DropdownMenuTrigger className={'outline-0'}>
                                             <MoreVertical className={'text-gray-500 max-h-5'}/>
@@ -58,11 +66,10 @@ function SideBar() {
                 </div>
                 <div className="side_bottom">
                     <Popover>
-                        <PopoverTrigger>
-                            <Button variant="outline"
-                                    className={'w-full border-dashed border-2 text-blue-700 border-blue-700'}>
+                        <PopoverTrigger type={'outline'} className={'w-full border-dashed border-2 text-blue-700 border-blue-700 flex justify-center p-2 items-center text-sm rounded font-semibold'}>
+
                                 <Plus className={'max-h-4'}/> Add New Project
-                            </Button>
+
                         </PopoverTrigger>
                         <PopoverContent>
                             <AddProject />
