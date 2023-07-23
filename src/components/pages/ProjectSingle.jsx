@@ -1,5 +1,5 @@
 import DefaultPage from "@/components/Layouts/DefaultPage.jsx";
-import { useSearchParams} from "react-router-dom";
+import {useParams, useSearchParams} from "react-router-dom";
 import {useProjects} from "@/contexts/ProjectContext.jsx";
 import Loading from "@/components/Loading.jsx";
 import SingleProject from "@/components/SingleProject.jsx";
@@ -13,12 +13,14 @@ function ProjectSingle() {
 
     const [searchParams]= useSearchParams()
     const hasTask = searchParams.get('task')
+    const projectID = useParams().id
+    console.log(projectID)
     if (isLoading) return;
     return (
         <DefaultPage>
             {isLoading && <Loading/>}
             {!isLoading && !hasTask && <SingleProject />}
-            {!isLoading && hasTask && <TaskSingle taskId={searchParams.get('task')} />}
+            {!isLoading && hasTask && <TaskSingle taskId={searchParams.get('task')} projectID = {projectID} />}
 
         </DefaultPage>
     );

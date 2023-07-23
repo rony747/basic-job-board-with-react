@@ -47,13 +47,23 @@ const {projects,clients,status,currentProject,isLoading}=state
         fetchProjects()
     }, [])
     const getProject =  (id)=>{
-        const currentProject = state.projects.filter(project => {
+        const currentProject = state.projects.find(project => {
             return project.id === id
         });
         return currentProject
     }
+    
+    const currentTask = (pID,tID)=>{
+        const current_project = state.projects.find(project => {
+            return project.id === pID
+        });
+        const current_task = current_project.tasks.find(task=>{
+            return task.task_id ===tID
+        })
+        return current_task
+    }
     return (
-        <ProjectContext.Provider value={{projects,clients,status,currentProject,isLoading, getProject,dispatch}}>
+        <ProjectContext.Provider value={{projects,clients,status,currentProject,isLoading, getProject,dispatch,currentTask}}>
             {children}
         </ProjectContext.Provider>
     )

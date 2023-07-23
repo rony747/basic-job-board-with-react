@@ -1,13 +1,13 @@
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card.jsx";
 import {Badge} from "@/components/ui/badge.jsx";
-import {Link, useNavigate, useParams, useSearchParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 import {Eye, MessageCircle} from "lucide-react";
 import {useProjects} from "@/contexts/ProjectContext.jsx";
 import {useEffect} from "react";
 
 function SingleProject() {
     const {id} = useParams()
-    const {projects, clients, isLoading, getProject} = useProjects()
+    const {projects, isLoading, getProject} = useProjects()
     const navigate = useNavigate()
     useEffect(() => {
         const is_project_valid = projects.find(project => project.id === id)
@@ -15,11 +15,9 @@ function SingleProject() {
     }, [id, navigate, projects])
 
     if (isLoading) return;
-    const currentProject = projects.find(project => {
-        return project.id === id
-    })
-
-    const { project_name, project_description, tasks} = currentProject
+    const currentProject = getProject(id)
+    if (!currentProject) return;
+    const {project_name, project_description, tasks} = currentProject
     const projectId = currentProject.id
     return (
         <>
