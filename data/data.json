@@ -1,0 +1,240 @@
+{
+  "allProjects": {
+    "projects": [
+      {
+        "id": "64bc62a8955471ccbc8ef352",
+        "project_name": "est pariatur",
+        "project_description": "non mollit pariatur commodo dolor ex aliqua labore anim exercitation duis consequat non exercitation eu",
+        "client_id": 5,
+        "created_by": "Christie Cabrera",
+        "created_at": "Wed Jan 21 1987 18:30:17 GMT+0600 (Bangladesh Standard Time)",
+        "tasks": [
+          {
+            "task_id": "64bc62a82c0a416e7b6a066c",
+            "task_title": "id quis nisi ea cillum",
+            "task_description": "mollit elit eu velit labore magna proident culpa ipsum quis fugiat enim ullamco eu sit",
+            "task_status": "To Do",
+            "task_priority": "High",
+            "task_notes": "cillum non laborum et amet reprehenderit officia"
+          },
+          {
+            "task_id": "64bc62a83cb7d9de719405a5",
+            "task_title": "tempor ad ipsum aute cupidatat",
+            "task_description": "sint excepteur voluptate ex ut culpa eu in cillum magna esse reprehenderit cupidatat in exercitation",
+            "task_status": "To Do",
+            "task_priority": "High",
+            "task_notes": "aute voluptate ullamco aute mollit excepteur cupidatat"
+          },
+          {
+            "task_id": "64bc62a8fd5adef110fb2010",
+            "task_title": "ad incididunt id proident esse",
+            "task_description": "dolore ad sunt ad mollit aute exercitation pariatur excepteur incididunt sint mollit reprehenderit elit est",
+            "task_status": "Need Review",
+            "task_priority": "Medium",
+            "task_notes": "sit et consectetur officia esse quis ullamco"
+          },
+          {
+            "task_id": "64bc62a8909825fd158c530c",
+            "task_title": "incididunt nisi adipisicing adipisicing officia",
+            "task_description": "irure aliquip laborum id amet commodo reprehenderit do commodo quis irure minim anim commodo do",
+            "task_status": "In Progress",
+            "task_priority": "Medium",
+            "task_notes": "sunt cupidatat enim reprehenderit fugiat do nulla"
+          },
+          {
+            "task_id": "64bc62a823d6aec36e0a1bbd",
+            "task_title": "cillum excepteur reprehenderit fugiat et",
+            "task_description": "ad incididunt esse esse Lorem sint nisi dolore est nisi aliqua aute nulla tempor Lorem",
+            "task_status": "To Do",
+            "task_priority": "High",
+            "task_notes": "nulla laborum deserunt irure dolore dolor adipisicing"
+          }
+        ]
+      },
+      {
+        "id": "64bc62a8b36abb835e39c22c",
+        "project_name": "consectetur non",
+        "project_description": "ad irure nulla deserunt minim dolore duis ut velit irure fugiat nulla culpa occaecat nisi",
+        "client_id": 3,
+        "created_by": "Sybil Schmidt",
+        "created_at": "Sat Mar 22 1980 10:34:44 GMT+0600 (Bangladesh Standard Time)",
+        "tasks": [
+          {
+            "task_id": "64bc62a8ade112ebcbd10a50",
+            "task_title": "fugiat ex reprehenderit magna velit",
+            "task_description": "nisi ullamco sunt aute exercitation ad commodo duis quis enim excepteur ad consectetur eiusmod nisi",
+            "task_status": "In Progress",
+            "task_priority": "Medium",
+            "task_notes": "nulla ex duis officia velit cupidatat deserunt"
+          },
+          {
+            "task_id": "64bc62a84078a18a1776379b",
+            "task_title": "laboris in laboris Lorem mollit",
+            "task_description": "labore velit est ut irure deserunt velit veniam cillum labore eiusmod deserunt laborum nisi eiusmod",
+            "task_status": "In Progress",
+            "task_priority": "High",
+            "task_notes": "anim sit veniam ipsum amet et exercitation"
+          },
+          {
+            "task_id": "64bc62a8a3d87d2e5ae6300c",
+            "task_title": "occaecat fugiat sit sit quis",
+            "task_description": "sit adipisicing velit dolore amet sit voluptate incididunt ex qui consequat adipisicing enim velit commodo",
+            "task_status": "To Do",
+            "task_priority": "High",
+            "task_notes": "mollit reprehenderit mollit adipisicing ut est dolore"
+          },
+          {
+            "task_id": "64bc62a82c40c7fd346fa6c9",
+            "task_title": "sint exercitation nulla amet proident",
+            "task_description": "cillum dolore enim duis magna adipisicing officia magna laboris minim do veniam exercitation deserunt ut",
+            "task_status": "Need Review",
+            "task_priority": "Low",
+            "task_notes": "dolor est irure aliqua labore consectetur mollit"
+          },
+          {
+            "task_id": "64bc62a8ecddb083f46022d5",
+            "task_title": "consectetur fugiat anim do exercitation",
+            "task_description": "amet eu quis amet est fugiat ullamco exercitation et sunt cillum Lorem quis enim minim",
+            "task_status": "To Do",
+            "task_priority": "Medium",
+            "task_notes": "adipisicing non minim aliqua reprehenderit amet nulla"
+          }
+        ]
+      },
+      {
+        "id": "64bc62a8b09b54aa2663f47d",
+        "project_name": "proident aliquip",
+        "project_description": "nostrud aute officia laborum non dolor veniam mollit sunt esse occaecat magna proident ad eiusmod",
+        "client_id": 8,
+        "created_by": "Callie Hammond",
+        "created_at": "Sun May 25 1997 00:02:51 GMT+0600 (Bangladesh Standard Time)",
+        "tasks": [
+          {
+            "task_id": "64bc62a81e97af3439e03dad",
+            "task_title": "esse qui consequat pariatur consectetur",
+            "task_description": "cupidatat quis in labore cupidatat anim esse incididunt nulla laborum sit commodo nulla sit dolore",
+            "task_status": "In Progress",
+            "task_priority": "High",
+            "task_notes": "nisi consequat in do aute quis cupidatat"
+          },
+          {
+            "task_id": "64bc62a81986e00fcc8bad32",
+            "task_title": "irure consequat exercitation magna ullamco",
+            "task_description": "ex nulla sunt officia aliqua exercitation officia cillum sunt sunt minim officia anim ullamco ea",
+            "task_status": "To Do",
+            "task_priority": "High",
+            "task_notes": "sunt est do eu fugiat Lorem elit"
+          },
+          {
+            "task_id": "64bc62a89c4d4ef105066219",
+            "task_title": "est consequat eiusmod proident tempor",
+            "task_description": "deserunt esse ullamco qui nisi veniam ad ut fugiat consectetur sit cupidatat mollit eu elit",
+            "task_status": "Done",
+            "task_priority": "Low",
+            "task_notes": "sunt qui aliqua velit culpa quis elit"
+          },
+          {
+            "task_id": "64bc62a8737d80085a4a44f3",
+            "task_title": "magna veniam ea veniam culpa",
+            "task_description": "labore Lorem do sit deserunt exercitation ea et in eu ut reprehenderit ad Lorem aliquip",
+            "task_status": "To Do",
+            "task_priority": "Medium",
+            "task_notes": "magna ut eu non occaecat aliqua sint"
+          },
+          {
+            "task_id": "64bc62a8bcf90a95a3839ff7",
+            "task_title": "Lorem enim cillum ullamco qui",
+            "task_description": "quis eu ex irure exercitation Lorem velit velit reprehenderit elit pariatur reprehenderit in consectetur et",
+            "task_status": "To Do",
+            "task_priority": "Low",
+            "task_notes": "sit laboris proident exercitation eu veniam nulla"
+          }
+        ]
+      },
+      {
+        "id": "64bc62a83cf85dcd4e905027",
+        "project_name": "ea non",
+        "project_description": "non ex sint labore pariatur anim quis incididunt ad ad ad quis anim voluptate proident",
+        "client_id": 1,
+        "created_by": "Atkins Mclean",
+        "created_at": "Mon May 03 1982 01:11:51 GMT+0600 (Bangladesh Standard Time)",
+        "tasks": [
+          {
+            "task_id": "64bc62a8db53dbf7fc932db0",
+            "task_title": "ullamco occaecat ad id aliqua",
+            "task_description": "dolor sint qui et Lorem minim fugiat excepteur laborum esse pariatur duis ut exercitation aute",
+            "task_status": "In Progress",
+            "task_priority": "Low",
+            "task_notes": "consequat ad cupidatat exercitation excepteur ullamco amet"
+          },
+          {
+            "task_id": "64bc62a8117df85be0bd2f90",
+            "task_title": "exercitation nisi culpa sunt enim",
+            "task_description": "ipsum proident dolor in pariatur fugiat amet aliqua exercitation dolor eu duis fugiat fugiat non",
+            "task_status": "In Progress",
+            "task_priority": "Low",
+            "task_notes": "tempor et occaecat ex cillum ad velit"
+          },
+          {
+            "task_id": "64bc62a86219fb2ae041ea25",
+            "task_title": "eiusmod officia amet magna ex",
+            "task_description": "incididunt fugiat excepteur est ad dolore qui nisi eu anim magna veniam ex nostrud in",
+            "task_status": "Need Review",
+            "task_priority": "Medium",
+            "task_notes": "pariatur id duis laboris in quis consequat"
+          },
+          {
+            "task_id": "64bc62a80dc3e658f64e42ee",
+            "task_title": "sit aute pariatur id qui",
+            "task_description": "fugiat amet anim exercitation in anim et Lorem deserunt excepteur exercitation nulla elit irure ex",
+            "task_status": "Need Review",
+            "task_priority": "High",
+            "task_notes": "nostrud minim qui nisi Lorem esse elit"
+          },
+          {
+            "task_id": "64bc62a84c104f7d29a1b421",
+            "task_title": "esse occaecat esse nostrud proident",
+            "task_description": "velit consequat exercitation ex commodo sunt nulla nulla deserunt labore labore voluptate Lorem in voluptate",
+            "task_status": "Need Review",
+            "task_priority": "High",
+            "task_notes": "dolor duis culpa duis qui incididunt proident"
+          }
+        ]
+      }
+    ],
+    "clients": [
+      {
+        "id": 4,
+        "client_name": "West Wiggins",
+        "client_email": "westwiggins@dadabase.com",
+        "client_phone": "(940) 578-2850",
+        "client_company": "Quarmony",
+        "client_country": "Lesotho"
+      },
+      {
+        "id": 1,
+        "client_name": "Kimberley Mckee",
+        "client_email": "kimberleymckee@quarmony.com",
+        "client_phone": "(886) 461-2936",
+        "client_company": "Marketoid",
+        "client_country": "Benin"
+      },
+      {
+        "id": 2,
+        "client_name": "Long Fischer",
+        "client_email": "longfischer@marketoid.com",
+        "client_phone": "(890) 500-3167",
+        "client_company": "Snips",
+        "client_country": "British Indian Ocean Territory"
+      },
+      {
+        "id": 7,
+        "client_name": "Andrews Saunders",
+        "client_email": "andrewssaunders@snips.com",
+        "client_phone": "(960) 586-3292",
+        "client_company": "Bizmatic",
+        "client_country": "Bulgaria"
+      }
+    ]
+  }
+}

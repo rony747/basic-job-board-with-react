@@ -1,0 +1,6 @@
+.project_list_item.active{
+    background: #365eff;
+}
+.project_list_item.active *{
+    color: #fff;
+}
