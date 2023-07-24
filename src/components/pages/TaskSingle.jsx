@@ -8,10 +8,7 @@ function TaskSingle({taskId, projectID}) {
     return (
         <>
             <div className="p-5">
-                <Badge
-                    className={`w-auto text-center inline-block `}>
-                    {task.task_priority}
-                </Badge>
+
                 <h1 className={'font-semibold text-xl mb-2'}>{task.task_title}</h1>
                 <p className={'mb-3'}>{task.task_description}</p>
                 <div className="flex justify-between">

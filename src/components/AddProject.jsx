@@ -12,38 +12,39 @@ import {useProjects} from "@/contexts/ProjectContext.jsx";
 import {useState} from "react";
 import {Button} from "@/components/ui/button.jsx";
 
-function AddProject() {
+function AddProject({setShowForm}) {
     const {clients, isLoading, dispatch} = useProjects()
-    const [title,setTitle]= useState('')
-    const [descrip,setDescrip]= useState('')
+    const [title, setTitle] = useState('')
+    const [descrip, setDescrip] = useState('')
     const [select, setSelect] = useState('')
 
     if (isLoading) return
 
-    function getClient(id) {
-        return clients.find(client => client.id === id).client_name
+    function getClientByName(name) {
+        return clients.find(client => client.client_name === name)
     }
-const handleFormSubmit = (e)=>{
-    e.preventDefault()
-    dispatch({
-        type:"project/add",
-        payload:{title, descrip, select}
-    })
 
-}
-
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+        const client_id = getClientByName(select).id
+        dispatch({
+            type: "project/add",
+            payload: {title, descrip, client_id}
+        })
+        setShowForm(false)
+    }
     return (
         <>
             <form onSubmit={handleFormSubmit}>
                 <div className="grid w-full max-w-sm items-center gap-1.5 mb-4">
                     <Label htmlFor="projectName" className={'mb-1'}>Project Name</Label>
-                    <Input type="text" id="projectName" value={title} placeholder="Project Name" onChange={(e)=>{
-                       setTitle(e.target.value)
+                    <Input type="text" id="projectName" value={title} placeholder="Project Name" onChange={(e) => {
+                        setTitle(e.target.value)
                     }}/>
                 </div>
                 <div className="grid w-full max-w-sm items-center gap-1.5 mb-4">
                     <Label htmlFor="projectDesc" className={'mb-1'}>Project Description</Label>
-                    <Textarea id="projectDesc" placeholder="Project Description" value={descrip} onChange={(e)=>{
+                    <Textarea id="projectDesc" placeholder="Project Description" value={descrip} onChange={(e) => {
                         setDescrip(e.target.value)
                     }}/>
                 </div>
@@ -51,13 +52,14 @@ const handleFormSubmit = (e)=>{
                     <Select onValueChange={(e) => {
                         setSelect(e)
                     }}>
+
                         <SelectTrigger className="w-auto">
-                            <SelectValue placeholder={`Select Client`} />
+                            <SelectValue placeholder={`Select Client`}/>
                         </SelectTrigger>
                         <SelectContent>
                             {clients.map(client => {
                                 return (
-                                    <SelectItem key={client.id} value={client.id}>{client.client_name}</SelectItem>
+                                    <SelectItem key={client.id} value={client.client_name}>{client.client_name}</SelectItem>
                                 )
                             })}
 

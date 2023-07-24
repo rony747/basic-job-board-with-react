@@ -14,7 +14,6 @@ function ProjectSingle() {
     const [searchParams]= useSearchParams()
     const hasTask = searchParams.get('task')
     const projectID = useParams().id
-    console.log(projectID)
     if (isLoading) return;
     return (
         <DefaultPage>

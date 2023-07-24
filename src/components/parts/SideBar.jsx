@@ -17,10 +17,13 @@ import {
 
 import './SideBar.css'
 import AddProject from "@/components/AddProject.jsx";
+import {useState} from "react";
 
 function SideBar() {
-    const {projects, clients,isLoading} = useProjects()
+    const {projects, clients,isLoading, dispatch} = useProjects()
     const {id} = useParams()
+    const [showForm, setShowForm] = useState(false)
+
     if (isLoading) return;
     function getClientImg(id){
         let currClient = clients.find(client=>client.id === id)
@@ -52,7 +55,9 @@ function SideBar() {
                                                 complete</DropdownMenuItem>
                                             <DropdownMenuItem><PenSquare className={'text-blue-700 w-4 mr-2'}/>Edit
                                                 project</DropdownMenuItem>
-                                            <DropdownMenuItem><BadgeX className={'text-red-700 w-4 mr-2'}/>Delete
+                                            <DropdownMenuItem onClick={(e)=>{
+                                                dispatch({type:'project/delete', payload:project.id})
+                                            }}><BadgeX className={'text-red-700 w-4 mr-2'} />Delete
                                                 Project</DropdownMenuItem>
 
                                         </DropdownMenuContent>
@@ -65,14 +70,14 @@ function SideBar() {
                     </div>
                 </div>
                 <div className="side_bottom">
-                    <Popover>
+                    <Popover open={showForm} onOpenChange={(e)=>{setShowForm(e)}}>
                         <PopoverTrigger type={'outline'} className={'w-full border-dashed border-2 text-blue-700 border-blue-700 flex justify-center p-2 items-center text-sm rounded font-semibold'}>
 
                                 <Plus className={'max-h-4'}/> Add New Project
 
                         </PopoverTrigger>
                         <PopoverContent>
-                            <AddProject />
+                            <AddProject setShowForm={setShowForm} />
                         </PopoverContent>
                     </Popover>
 
